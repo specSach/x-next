@@ -1,3 +1,10 @@
-export default function ProfileFake() {
-  return <h1 className="text-3xl font-bold mb-6">Profile</h1>;
+import type { Metadata } from "next";
+import { ProfileFake } from "./ProfileFake";
+
+export const metadata: Metadata = {
+  title: "ProfileFake",
+};
+
+export default function ProfileFakePage() {
+  return <ProfileFake />;
 }
